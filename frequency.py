@@ -8,6 +8,7 @@ for i in string:
     else:
         dict[i]=1
 
-print(dict)
+sorted_dict = sorted(dict, key=dict.get, reverse=True)
+for r in sorted_dict:
+    print(r+"="+str(dict[r]))
 
-        
